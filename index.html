@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Fire Tournament</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+  <h1 class="logo">FREE FIRE</h1>
+  <h2 class="title">TOURNAMENT REGISTRATION</h2>
+
+  <select id="mode" onchange="updatePlayers()">
+    <option value="">Select Mode</option>
+    <option value="2">2v2 Clash Squad</option>
+    <option value="4">4v4 Clash Squad</option>
+    <option value="2">BR Duo</option>
+    <option value="4">BR Squad</option>
+  </select>
+
+  <div class="card" id="players"></div>
+
+  <button onclick="showQR()">JOIN NOW ⚡</button>
+
+  <div id="payment" class="hidden">
+    <p>Scan & Pay</p>
+    <img src="qr.jpg">
+    <button onclick="confirmJoin()">I PAID ✅</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
